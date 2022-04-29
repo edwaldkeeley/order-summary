@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  overflow-x: hidden;
+  background: var(--Pale-blue);
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/pattern-background-desktop.svg);
+  /* background: rgb(76, 110, 235); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 400px;
+  height: 630px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 23px 0px rgba(38, 0, 255, 0.129);
+}
+.main-img img {
+  width: 100%;
+  display: block;
+}
+.text-box {
+  text-align: center;
+  color: var(--dark-blue);
+  padding: 20px;
+}
+.text-box h1 {
+  font-size: 33px;
+  padding-top: 19px;
+}
+.text-box p {
+  padding: 15px;
+  padding-bottom: 0;
+  line-height: 22px;
+  color: rgba(75, 75, 240, 0.626);
+}
+.plan {
+  background-color: var(--Very-pale-blue);
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.plan-left {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+.plan ul {
+  list-style-type: none;
+  padding-left: 18px;
+  color: hsl(223, 47%, 23%, 60%);
+}
+.bold {
+  font-weight: 700;
+  text-align: left;
+  color: var(--Dark-blue);
+}
+.plant-Btn a {
+  font-weight: 600;
+  transition: 0.5s;
+}
+.plan-Btn {
+  text-align: left;
+}
+.plan-Btn a:hover {
+  text-decoration: none;
+  color: rgba(201, 22, 221, 0.775);
+}
+.Proceed {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.hero-btn {
+  background: var(--Bright-blue);
+  padding: 18px 75px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  transition: 0.5s;
+  box-shadow: 0 20px 16px 0px rgba(38, 0, 255, 0.129);
+}
+.hero-btn:hover {
+  background: rgb(128, 128, 235);
+}
+.Cancel {
+  text-align: center;
+  font-weight: 700;
+}
+.Cancel a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: rgb(179, 179, 250);
+}
+.Cancel a:hover {
+  color: var(--Dark-blue);
+}
